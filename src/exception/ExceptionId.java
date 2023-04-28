@@ -10,10 +10,10 @@ package exception;
  */
 public class ExceptionId extends Exception{
     public void showMessageReguler(){
-        System.out.println("[!] ID Paket Reguler Harus Ada Unser 'REG-' [!]");
+        System.out.println("[!] ID Paket Reguler Harus Ada Unsur 'REG-' [!]");
     }
     
     public void showMessageExpress(){
-        System.out.println("[!] ID Paket Express Harus Ada Unser ' EXP-' [!]");
+        System.out.println("[!] ID Paket Express Harus Ada Unsur ' EXP-' [!]");
     }
 }

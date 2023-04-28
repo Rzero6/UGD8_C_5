@@ -31,11 +31,11 @@ public class Express extends Paket {
     }
     public void showPaketExpress(){
         showPaket();
-        System.out.println("ID Paket Express : "+idExpress);
-        System.out.println("Tarif Jemput\t : "+tarifJemput);
+        System.out.println("ID Paket Express\t : "+idExpress);
+        System.out.println("Tarif Jemput\t\t : "+tarifJemput);
         totalBiayaExpress();
     }
     public void totalBiayaExpress(){
-        System.out.println("Total Biaya\t : "+((berat*2000.0)+tarifJemput));
+        System.out.println("Total Biaya\t\t : "+((berat*2000.0)+tarifJemput));
     }
 }

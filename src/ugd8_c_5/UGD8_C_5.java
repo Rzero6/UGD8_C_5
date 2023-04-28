@@ -44,7 +44,7 @@ public class UGD8_C_5 {
             i=1;
             
             //express
-            System.out.println("Masukkan Nama Penerima : ");namaPenerima=br.readLine();
+            System.out.println("\n\nMasukkan Nama Penerima : ");namaPenerima=br.readLine();
             System.out.println("Masukkan No telp Penerima : ");noTelpPenerima=br.readLine();
             System.out.println("Masukkan Berat Paket : ");berat=Double.parseDouble(br.readLine());
             System.out.println("Masuukan ID Paket Express : ");idExpress=br.readLine();

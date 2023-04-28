@@ -30,12 +30,12 @@ public class Reguler extends Paket {
     
     public void showPaketReguler(){
         showPaket();
-        System.out.println("ID Paket Reguler : "+idReguler);
-        System.out.println("Tarif Packing\t : "+tarifPacking);
+        System.out.println("ID Paket Reguler\t : "+idReguler);
+        System.out.println("Tarif Packing\t\t : "+tarifPacking);
         totalBiayaReguler();
     }
     
     public void totalBiayaReguler(){
-        System.out.println("Total Biaya\t : "+(berat*4000.0)+tarifPacking);
+        System.out.println("Total Biaya\t\t : "+((berat*4000.0)+tarifPacking));
     }
 }

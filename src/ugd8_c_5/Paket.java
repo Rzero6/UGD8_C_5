@@ -17,7 +17,7 @@ public class Paket {
     public Paket(String namaPenerima, String noTelpPenerima, double berat) throws ExceptionNama, ExceptionNomortelepon, ExceptionBerat {
         if(namaPenerima.isBlank()){
             throw new ExceptionNama();
-        }else if(noTelpPenerima.length()<11 && noTelpPenerima.length()>13){
+        }else if(noTelpPenerima.length()<11 || noTelpPenerima.length()>13){
             throw new ExceptionNomortelepon();
         }else if(berat<=0){
             throw new ExceptionBerat();
@@ -29,8 +29,8 @@ public class Paket {
     }
     
     public void showPaket(){
-        System.out.println("Nama Penerima\t : "+namaPenerima);
-        System.out.println("No Telpon Penerima : "+noTelpPenerima);
-        System.out.println("Berat Paket\t : "+berat);
+        System.out.println("\nNama Penerima\t\t : "+namaPenerima);
+        System.out.println("No Telpon Penerima\t : "+noTelpPenerima);
+        System.out.println("Berat Paket\t\t : "+berat);
     }
 }
