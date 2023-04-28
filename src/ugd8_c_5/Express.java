@@ -4,6 +4,12 @@
  */
 package ugd8_c_5;
 
+import exception.ExceptionBerat;
+import exception.ExceptionId;
+import exception.ExceptionNama;
+import exception.ExceptionNomortelepon;
+import exception.ExceptionTarif;
+
 /**
  *
  * @author VICTUS
@@ -12,10 +18,16 @@ public class Express extends Paket {
     private String idExpress;
     private double tarifJemput;
 
-    public Express(String idExpress, double tarifJemput, String namaPenerima, String noTelpPenerima, double berat) {
+    public Express(String idExpress, double tarifJemput, String namaPenerima, String noTelpPenerima, double berat) throws ExceptionNama, ExceptionNomortelepon, ExceptionBerat,ExceptionId,ExceptionTarif {
         super(namaPenerima, noTelpPenerima, berat);
-        this.idExpress = idExpress;
-        this.tarifJemput = tarifJemput;
+        if(!idExpress.contains("EXP-")){
+            throw new ExceptionId();
+        }else if(tarifJemput>22000 && tarifJemput<5000){
+            throw new ExceptionTarif();
+        }else{
+            this.idExpress = idExpress;
+            this.tarifJemput = tarifJemput;
+        }
     }
     public void showPaketExpress(){
         showPaket();
