@@ -20,7 +20,7 @@ public class Reguler extends Paket {
         super(namaPenerima, noTelpPenerima, berat);
         if(!idReguler.contains("REG-")){
             throw new ExceptionId();
-        }else if(tarifPacking>20000 && tarifPacking<0){
+        }else if(tarifPacking>20000 || tarifPacking<0){
             throw new ExceptionTarif();
         }else{
             this.idReguler = idReguler;

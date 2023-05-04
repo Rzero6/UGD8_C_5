@@ -16,4 +16,8 @@ public class ExceptionId extends Exception{
     public void showMessageExpress(){
         System.out.println("[!] ID Paket Express Harus Ada Unsur ' EXP-' [!]");
     }
+    
+    public void showMessageKilat(String data){
+        System.out.println("[!] "+data+" tidak diawali dengan 'KIL-'");
+    }
 }

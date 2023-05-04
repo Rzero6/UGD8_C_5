@@ -22,7 +22,7 @@ public class Express extends Paket {
         super(namaPenerima, noTelpPenerima, berat);
         if(!idExpress.contains("EXP-")){
             throw new ExceptionId();
-        }else if(tarifJemput>22000 && tarifJemput<5000){
+        }else if(tarifJemput>22000.0 || tarifJemput<5000.0){
             throw new ExceptionTarif();
         }else{
             this.idExpress = idExpress;
